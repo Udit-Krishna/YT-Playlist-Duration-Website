@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YouTube Playlist Length Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/icon type">
+    </head>
+    <body bgcolor="#71c7d1">
+        <br><br><font style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <center><img src="{{url_for('static', filename='logo.png')}}" align="left" height="100"/>
+        <br><br><h1><b><u>YouTube Playlist Length Calculator</u></b></h1>
+        <br><br><br>
+        <h3>Enter Playlist Link in the given box below</h3>
+        <form method="POST" action="/">
+            <label for="link">Link: </label>
+            <input type="text" id="Playlist Link " name="link" size="75"><br><br>
+            <input type="submit" value="Get Duration">
+        </form>
+        <br><i><small>
+            Please note that this may take some time according to the playlist size <br>
+            For example: https://www.youtube.com/playlist?list=PL6rBC_87VKs76V9Vc0s44Gg_Q6qObZrFY
+        </small></i>
+        </center></font>
+    </body>
+</html>
